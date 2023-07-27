@@ -29,10 +29,11 @@
 
 /* ================= */
 header {
-  background: rgba(144, 19, 254, 0.4);
+  background: rgba(28, 82, 228, 0.35);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-  backdrop-filter: blur(9px);
-  -webkit-backdrop-filter: blur(9px);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -43,7 +44,7 @@ header {
   z-index: 1;
 }
 .nav__list--div {
-  border: 1px solid white;
+  /* border: 1px solid white; */
 }
 .nav {
   /* background-color: blue; */
@@ -61,17 +62,19 @@ header {
 }
 /* ======================= */
 main {
-  background: var(--background);
+  background-color: var(--background);
+  width: 100%;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
+  border: 3px red solid;
 }
 body {
   font-family: "Poppins", sans-serif;
 }
 video {
-  position: absolute;
+  /* position: absolute; */
   margin-top: 70px;
   top: 0;
   left: 0;
@@ -89,21 +92,30 @@ video {
   opacity: 0.5;
   mix-blend-mode: overlay;
 }
+
 #hero {
   width: 100%;
   height: 100%;
   max-width: 1300px;
+  margin-top: 70px;
+  padding: 70px 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow: hidden;
-  margin-top: 70px;
+  flex-direction: column;
+  /* overflow: hidden; */
+  background: rgba(4, 4, 27, 0.35);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
   border: 1px red solid;
-  gap: 100px;
-  position: relative;
-  min-height: 100vh;
 }
-
+#hero__title {
+  border: 1px solid blue;
+  display: flex;
+  gap: 20px;
+}
 .hero__items {
   padding: 20px;
   color: white;
@@ -111,12 +123,21 @@ video {
   justify-content: center;
   display: flex;
   flex-direction: column;
+  border: 1px green solid;
 }
+.hero__image {
+  background-image: url(../img/league-of-legends-pro-x-gaming-keyboard-gallery-1.png);
+  background-size: cover;
+
+  width: 600px;
+  height: 350px;
+}
+
 .hero__items h1 {
-  font-size: 60px;
+  font-size: 75px;
   font-weight: 800;
-  min-width: 350px;
-  text-align: left;
+  /* min-width: 350px; */
+  text-align: center;
 }
 .hero__items p {
   font-size: 14px;
@@ -124,4 +145,11 @@ video {
   letter-spacing: 2px;
   line-height: 30px;
   color: var(--text-gray);
+}
+#hero__info {
+  max-width: 1300px;
+  width: 100%;
+  height: 100%;
+  padding: 70px 0;
+  border: 1px solid white;
 }
