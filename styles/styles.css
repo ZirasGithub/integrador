@@ -92,7 +92,9 @@ video {
   opacity: 0.5;
   mix-blend-mode: overlay;
 }
-
+p {
+  color: var(--text-white);
+}
 /* HERO SECTION ===================================== */
 
 #hero {
@@ -129,7 +131,7 @@ video {
   color: var(--text-white);
 }
 
-.hero__mainpage p {
+/* .hero__mainpage p {
   font-size: 14px;
   width: 70%;
   display: flex;
@@ -140,7 +142,19 @@ video {
   line-height: 30px;
   color: var(--text-gray);
   border: 1px solid red;
+} */
+.hero__text {
+  font-size: 16px;
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  letter-spacing: 2px;
+  line-height: 30px;
+  color: var(--text-gray);
 }
+
 .hero__mainpage span {
   /* AGREGAR TEXTO ANIMADO DE COLORES!!!!!!!!!!!!!!! */
 }
@@ -159,10 +173,85 @@ video {
   justify-content: center;
   gap: 20px;
 }
-/* #hero__info {
-  max-width: 1300px;
+.hero__buttons {
+  display: flex;
+  border: 1px solid red;
+  padding: 15px 0;
+  gap: 20px;
+}
+#hero__info {
   width: 100%;
   height: 100%;
+  max-width: 1300px;
+  margin-top: 70px;
   padding: 70px 0;
-  border: 1px solid white;
-}  */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  /* overflow: hidden; */
+  background: rgba(4, 4, 27, 0.35);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px red solid;
+}
+#hero__info > .hero__text {
+  padding-top: 50px;
+  font-size: 25px;
+}
+.hero__subtitle {
+  color: var(--text-white);
+  font-size: 45px;
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  letter-spacing: 2px;
+  font-weight: 800;
+  padding: 100px 50px;
+}
+.carousel-container {
+  width: 200px;
+  height: 300px;
+  overflow: hidden;
+  position: relative;
+}
+.hero__carousel {
+  display: flex;
+  /* align-items: center;
+  justify-content: center;
+  gap: 50px;
+  border: 1px solid blue; */
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s ease;
+}
+.hero__carousel img {
+  width: 100%;
+  height: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.prev-btn,
+.next-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+/* @keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+} */
