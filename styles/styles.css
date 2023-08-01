@@ -213,45 +213,45 @@ p {
   font-weight: 800;
   padding: 100px 50px;
 }
-.carousel-container {
-  width: 200px;
-  height: 300px;
-  overflow: hidden;
-  position: relative;
-}
+
 .hero__carousel {
   display: flex;
-  /* align-items: center;
+  align-items: center;
   justify-content: center;
   gap: 50px;
-  border: 1px solid blue; */
+  border: 1px solid blue;
+}
+#hero__shop {
   width: 100%;
   height: 100%;
-  transition: transform 0.5s ease;
+  max-width: 1300px;
+  margin-top: 70px;
+  padding: 70px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  /* overflow: hidden; */
+  background: rgba(4, 4, 27, 0.35);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 3px white solid;
 }
-.hero__carousel img {
+.hero__items > .hero__subtitle {
   width: 100%;
-  height: 100%;
-  height: auto;
-  object-fit: cover;
+  /* padding-bottom: 30px;
+  padding-top: 0px; */
+  padding: 30px 0px;
 }
-.prev-btn,
-.next-btn {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: rgba(0, 0, 0, 0.5);
-  color: white;
-  border: none;
-  padding: 10px;
-  font-size: 16px;
-  cursor: pointer;
+.hero__items > .hero__text {
+  width: 100%;
 }
-/* @keyframes slide {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
-} */
+.hero__items {
+  border: 1px green solid;
+}
+.hero__itemcontainer {
+  border: 1px solid violet;
+  /* acá van los items de compra. */
+}
