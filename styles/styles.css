@@ -324,3 +324,22 @@ p {
 #hero__help > .hero__text {
   border: 1px solid red;
 }
+.wrapper {
+  max-width: 75%;
+  margin: auto;
+}
+.accordion {
+  background-color: white;
+  color: rgba(0, 0, 0, 0.8);
+  cursor: pointer;
+  font-size: 20px;
+  width: 100%;
+  padding: 25px 2.5rem;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* continuar viendo https://www.youtube.com/watch?v=6U-8kIx2oMk */
