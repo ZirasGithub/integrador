@@ -68,7 +68,6 @@ main {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  border: 3px red solid;
 }
 body {
   font-family: "Poppins", sans-serif;
@@ -112,10 +111,8 @@ p {
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
   border-radius: 10px;
-  border: 1px red solid;
 }
 .hero__mainpage {
-  border: 1px solid green;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -143,15 +140,23 @@ p {
   color: var(--text-gray);
 }
 
-.hero__mainpage span {
-  /* AGREGAR TEXTO ANIMADO DE COLORES!!!!!!!!!!!!!!! */
+.hero__mainpage > h1 > span {
+  background: linear-gradient(
+    to top,
+    var(--bg-white),
+    var(--bg-white),
+    var(--btn-clr)
+  );
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
 }
-.hero__mainpage a {
+/* .hero__mainpage a {
   color: var(--text-white);
   background: var(--btn-clr);
   padding: 8px 12px;
   border-radius: 8px;
-}
+} */
 .hero__img {
   width: 600px;
   padding: 20px;
@@ -163,10 +168,57 @@ p {
 }
 .hero__buttons {
   display: flex;
-  border: 1px solid red;
   padding: 15px 0;
   gap: 20px;
+  text-transform: uppercase;
+  transition: 0.3s ease all;
 }
+.button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  width: 100%;
+  height: 80px;
+  background-color: var(--btn-clr);
+  color: #fff;
+  border: none;
+  font-size: 20px;
+  font-weight: 600;
+  border-radius: 10px;
+  transition: 0.3s ease all;
+  position: relative;
+  overflow: hidden;
+}
+
+.button::after {
+  content: "";
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: calc(-100% - 80px);
+  transition: 0.3s ease-in-out all;
+  border-right: 80px solid transparent;
+  border-bottom: 80px solid #286cff;
+}
+.button:hover::after {
+  left: 0;
+}
+.button span {
+  position: relative;
+  z-index: 2;
+  transition: 0.3s ease all;
+}
+
+/* .hero__buttons::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: aqua;
+  position: absolute;
+} */
+
 #hero__info {
   width: 100%;
   height: 100%;
@@ -183,7 +235,6 @@ p {
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
   border-radius: 10px;
-  border: 1px red solid;
 }
 #hero__info > .hero__text {
   padding-top: 50px;
@@ -207,7 +258,6 @@ p {
   align-items: center;
   justify-content: center;
   gap: 50px;
-  border: 1px solid blue;
   padding: 50px 50px;
 }
 #hero__shop {
@@ -226,7 +276,6 @@ p {
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
   border-radius: 10px;
-  border: 3px white solid;
 }
 .hero__items > .hero__subtitle {
   width: 100%;
@@ -237,9 +286,7 @@ p {
 .hero__items > .hero__text {
   width: 100%;
 }
-.hero__items {
-  border: 1px green solid;
-}
+
 .hero__shoplist {
   display: flex;
   justify-content: center;
@@ -270,7 +317,6 @@ p {
   color: var(--text-white);
 }
 .hero__itemprice {
-  border: 1px solid red;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -287,7 +333,6 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid red;
   gap: 20px;
 }
 .hero__itemprice__buttons a {
@@ -316,21 +361,18 @@ p {
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
   border-radius: 10px;
-  border: 3px white solid;
 }
 #hero__help > .hero__subtitle {
   padding: 30px 0px;
 }
-#hero__help > .hero__text {
-  border: 1px solid red;
-}
+
 .wrapper {
   max-width: 75%;
   margin: auto;
 }
 .accordion {
-  background-color: white;
-  color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(75, 104, 250, 0.25);
+  color: var(--text-white);
   cursor: pointer;
   font-size: 20px;
   width: 100%;
@@ -341,5 +383,31 @@ p {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  font-weight: bold;
 }
-/* continuar viendo https://www.youtube.com/watch?v=6U-8kIx2oMk */
+.accordion i {
+  font-size: 1.6rem;
+}
+.active,
+.accordion:hover {
+  background-color: rgba(105, 129, 250, 0.25);
+}
+.panel {
+  padding: 0 18px;
+  background-color: rgba(186, 198, 255, 0.25);
+  /* display: none; */
+  overflow: hidden;
+  padding: 1rem 2rem 1rem 2rem;
+}
+.panel p {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 1.2rem;
+  line-height: 1.4;
+}
+.faq {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  margin: 10px 0;
+}
+.faq:active {
+  border: none;
+}
