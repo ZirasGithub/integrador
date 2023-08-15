@@ -60,6 +60,9 @@ header {
   align-items: center;
   gap: 10rem;
 }
+.nav__list a {
+  color: var(--text-white);
+}
 /* ======================= */
 main {
   background-color: var(--background);
@@ -210,7 +213,9 @@ p {
   z-index: 2;
   transition: 0.3s ease all;
 }
-
+.button a {
+  color: var(--text-white);
+}
 /* .hero__buttons::after {
   content: "";
   width: 100%;
@@ -338,7 +343,11 @@ p {
   width: 150px;
   height: 150px;
 }
-
+.headerDivider {
+  border-left: 1px solid #38546d;
+  border-right: 1px solid #16222c;
+  height: 60px;
+}
 .hero__itemprice {
   display: flex;
   align-items: center;
@@ -493,4 +502,25 @@ input:focus {
 .contact-button:hover {
   background: gray;
   color: white;
+}
+/* footer */
+.fa-brands {
+  color: white;
+}
+.footer__icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  padding-top: 40px;
+}
+.footer__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  padding: 20px 0;
+}
+.footer__list a {
+  color: var(--text-white);
 }
