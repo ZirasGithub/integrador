@@ -514,6 +514,15 @@ input:focus {
   gap: 30px;
   padding-top: 40px;
 }
+.fa-facebook:hover {
+  transform: translateY(-10px);
+}
+.fa-linkedin:hover {
+  transform: translateY(-10px);
+}
+.fa-instagram:hover {
+  transform: translateY(-10px);
+}
 .footer__list {
   display: flex;
   justify-content: center;
@@ -523,4 +532,14 @@ input:focus {
 }
 .footer__list a {
   color: var(--text-white);
+}
+.footer__text {
+  font-size: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  letter-spacing: 2px;
+  line-height: 30px;
+  color: var(--text-gray);
 }
