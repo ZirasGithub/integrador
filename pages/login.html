@@ -6,32 +6,44 @@
     <title>Login</title>
     <link rel="stylesheet" href="../index.html" />
     <link rel="stylesheet" href="../styles/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <main>
-      <section id="hero__login">
+      <section id="login-page">
         <div class="login__container">
-          <h2>Iniciá sesión en tu cuenta</h2>
-          <button class="login-button">
-            <a href="">Inicia sesión con google</a>
-          </button>
-          <div class="loginDivider"></div>
-          <p>o</p>
-          <form id="login-form" name="loginform" class="loginForm">
-            <label for="email">Email</label>
-            <input
-              type="email"
-              name="loginemail"
-              id="loginemail"
-              placeholder="E-mail"
-            />
-            <label for="password">Contraseña</label>
-            <input
-              type="password"
-              name="loginpassword"
-              id="loginpassword"
-              placeholder="Contraseña"
-            />
+          <form action="">
+            <h1>Login</h1>
+            <div class="input-box">
+              <input type="text" placeholder="Usuario" required />
+              <i class="fa-solid fa-user"></i>
+            </div>
+            <div class="input-box">
+              <input type="password" placeholder="Contraseña" required />
+              <i class="fa-solid fa-lock"></i>
+            </div>
+            <div class="remember-forgot">
+              <label for="remember"
+                ><input
+                  type="checkbox"
+                  name="remember"
+                  id="remember"
+                />Recuerdame</label
+              >
+              <a href="#">Olvidaste tu contraseña?</a>
+            </div>
+            <button type="submit" class="btn">
+              <a href="../index.html">INICIAR SESIÓN</a>
+            </button>
+            <div class="register-link">
+              <p>No tenés cuenta? <a href="./register.html">Registrate</a></p>
+            </div>
           </form>
         </div>
       </section>
