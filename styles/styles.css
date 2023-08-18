@@ -53,6 +53,7 @@ html {
   gap: 15rem;
 }
 /* <Menú hamburguesa> */
+/* abrir menu */
 .nav i {
   font-size: 36px;
   display: flex;
@@ -60,8 +61,8 @@ html {
 #menu-toggle,
 .menu-label {
   display: none;
-  /* align-items: flex-end; */
 }
+
 /* </Menú hamburguesa> */
 .nav__list {
   display: flex;

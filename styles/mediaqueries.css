@@ -28,6 +28,7 @@
   #menu-toggle:checked + .nav__list {
     display: flex;
   }
+
   /* hero */
   #hero {
     width: 90%;
