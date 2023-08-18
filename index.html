@@ -26,16 +26,19 @@
       />
       <!-- Navbar -->
       <nav class="nav">
+        <label for="menu-toggle" class="menu-label">
+          <i class="fa-solid fa-bars fa-lg"></i>
+        </label>
+        <input type="checkbox" id="menu-toggle" />
         <ul class="nav__list">
           <li><a href="#hero">PRODUCTOS</a></li>
           <li><a href="#">ARMÁ TU PC</a></li>
           <li><a href="./pages/login.html">LOGIN/REGISTRO</a></li>
         </ul>
+        <i class="fa-solid fa-magnifying-glass fa-2xl"></i>
       </nav>
-      <i class="fa-solid fa-magnifying-glass fa-2xl"></i>
     </header>
     <main>
-      <div class="capa"></div>
       <!-- HERO -->
       <section id="hero">
         <div class="hero__mainpage">
@@ -345,7 +348,7 @@
               rows="10"
               placeholder="Mensaje"
             ></textarea>
-            <button class="contact-button">ENVIAR</button>
+            <button class="contact-button"><span>ENVIAR</span></button>
           </form>
         </div>
       </section>
