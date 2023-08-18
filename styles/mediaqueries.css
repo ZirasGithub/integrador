@@ -28,4 +28,13 @@
   #menu-toggle:checked + .nav__list {
     display: flex;
   }
+  .hero__img {
+    display: none;
+  }
+  #hero {
+    max-width: 992px;
+  }
+  .hero__sponsors {
+    flex-direction: column;
+  }
 }
