@@ -107,8 +107,8 @@
 }
 @media (max-width: 375px) {
   /* HERO */
-  .nav {
-    gap: 20px;
+  .nav__list {
+    gap: 5rem;
   }
   #hero h1 {
     font-size: 60px;
