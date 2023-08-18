@@ -7,7 +7,7 @@
     position: absolute;
     top: 100px;
     width: 90%;
-    border: 2px solid red;
+    border: 2px solid lightseagreen;
     border-top: 0;
     left: 5%;
     right: 5%;
@@ -28,13 +28,105 @@
   #menu-toggle:checked + .nav__list {
     display: flex;
   }
+  /* hero */
+  #hero {
+    width: 90%;
+  }
   .hero__img {
     display: none;
   }
-  #hero {
-    max-width: 992px;
+  /* hero info/sponsors */
+  #hero__info {
+    width: 90%;
+
+    gap: 30px;
   }
+  #hero__info p {
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+  }
+  .hero__subtitle {
+    font-size: 50px;
+  }
+  .hero__sponsors > .sponsor-1 {
+    width: 200px;
+    height: 200px;
+  }
+  .hero__sponsors > .sponsor-2 {
+    width: 200px;
+    height: 200px;
+  }
+  .hero__sponsors > .sponsor-3 {
+    width: 200px;
+    height: 200px;
+  }
+  /* shop/items */
+  #hero__shop {
+    width: 90%;
+  }
+  /* help/faq */
+  #hero__help {
+    width: 90%;
+  }
+  #contacto {
+    width: 90%;
+  }
+}
+@media (max-width: 576px) {
   .hero__sponsors {
     flex-direction: column;
+  }
+  .hero__sponsors > .sponsor-1 {
+    width: 300px;
+    height: 300px;
+  }
+  .hero__sponsors > .sponsor-2 {
+    width: 300px;
+    height: 300px;
+  }
+  .hero__sponsors > .sponsor-3 {
+    width: 300px;
+    height: 300px;
+  }
+  .container {
+    padding: 50px 10px;
+  }
+  .contactForm {
+    width: 500px;
+    height: 800px;
+  }
+}
+@media (max-width: 375px) {
+  /* HERO */
+
+  #hero h1 {
+    font-size: 60px;
+  }
+  .hero__mainpage p {
+    width: 100%;
+  }
+
+  .button {
+    font-size: 14px;
+    width: 150px;
+  }
+  /* contacto */
+  #contacto > .hero__subtitle {
+    /* width: 80%; */
+    font-size: 35px;
+    padding-bottom: 50px;
+  }
+  .container {
+    padding: 50px 10px;
+  }
+  .contactForm {
+    width: 300px;
+    height: 800px;
+  }
+  /* footer icons */
+  .footer__icons {
+    gap: 80px;
+    padding-bottom: 20px;
   }
 }
