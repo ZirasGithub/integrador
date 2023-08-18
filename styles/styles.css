@@ -50,7 +50,7 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 20rem;
+  gap: 15rem;
 }
 /* <Menú hamburguesa> */
 .nav i {

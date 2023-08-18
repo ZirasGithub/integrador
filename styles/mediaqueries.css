@@ -35,6 +35,10 @@
   .hero__img {
     display: none;
   }
+  .button {
+    font-size: 14px;
+    width: 150px;
+  }
   /* hero info/sponsors */
   #hero__info {
     width: 90%;
@@ -74,6 +78,10 @@
   }
 }
 @media (max-width: 576px) {
+  .button {
+    font-size: 14px;
+    width: 150px;
+  }
   .hero__sponsors {
     flex-direction: column;
   }
@@ -128,5 +136,28 @@
   .footer__icons {
     gap: 80px;
     padding-bottom: 20px;
+  }
+
+  /* login  */
+
+  .login__container {
+    width: 300px;
+  }
+  .remember-forgot {
+    font-size: 10px;
+    width: 210px;
+    justify-content: space-around;
+  }
+  .remember-forgot > label {
+    accent-color: #fff;
+    margin-right: 60px;
+    margin-left: 18px;
+  }
+  /* register */
+  .register__container {
+    width: 300px;
+  }
+  .register-forgot > label {
+    margin-right: 0;
   }
 }
